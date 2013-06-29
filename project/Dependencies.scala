@@ -10,6 +10,7 @@ object Library {
   // Libraries
   val akkaActor = "com.typesafe.akka" %% "akka-actor" % akkaVersion
   val akkaSlf4j = "com.typesafe.akka" %% "akka-slf4j" % akkaVersion
+  val akkaRemote = "com.typesafe.akka" %% "akka-remote" % akkaVersion
   val logbackClassic = "ch.qos.logback" % "logback-classic" % logbackVersion
   val sprayCan = "io.spray" % "spray-can" % sprayVersion
 }
@@ -22,6 +23,7 @@ object Dependencies {
     akkaActor,
     akkaSlf4j,
     logbackClassic,
-    sprayCan
+    sprayCan,
+    akkaRemote % "runtime"
   )
 }
